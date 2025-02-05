@@ -10,13 +10,7 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.interstitial.InterstitialAd;
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 import java.util.Locale;
 
@@ -32,8 +26,6 @@ public class ScoreActivity extends AppCompatActivity {
     private static final int MAX_SCORE = 4 * 10;
     private int score = -1;
 
-    private boolean isAdShown = false;
-
     /**
      *
      * @param packageManager
@@ -46,32 +38,6 @@ public class ScoreActivity extends AppCompatActivity {
         } catch (PackageManager.NameNotFoundException e) {
             return false;
         }
-    }
-
-    /**
-     *
-     */
-    private void initializeAds() {
-
-        if (isAdShown) {
-            return;
-        }
-
-        MobileAds.initialize(this);
-
-        String    adId      = getString(R.string.admob_ad_id);
-        AdRequest adRequest = new AdRequest.Builder().build();
-
-        InterstitialAd.load(this, adId, adRequest, new InterstitialAdLoadCallback() {
-            @Override
-            public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-
-                if (!isAdShown) {
-                    interstitialAd.show(ScoreActivity.this);
-                    isAdShown = true;
-                }
-            }
-        });
     }
 
     /**
@@ -121,8 +87,9 @@ public class ScoreActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ((App) getApplication()).showAd(this);
+
         setContentView(R.layout.activity_score);
-        initializeAds();
 
         SharedPreferences preferences =
             getApplicationContext().getSharedPreferences("score", MODE_PRIVATE);
@@ -165,15 +132,12 @@ public class ScoreActivity extends AppCompatActivity {
      *
      * @param view
      */
-    public void findOutMore(View view) {
+    public void learnMore(View view) {
 
-        String url =
-            "https://play.google.com/store/apps/details?id=" +
-            PACKAGE_NAME;
+        String url = getString(R.string.meditation_app_url);
 
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
-        intent.setPackage("com.android.vending");
         startActivity(intent);
     }
 }

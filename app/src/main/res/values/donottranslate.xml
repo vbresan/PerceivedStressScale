@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="meditation_app_url">https://github.com/vbresan/MindfulnessMeditation/</string>
+
     <string name="extra_key_test_index">biz.binarysolutions.stress.TEST_INDEX</string>
     <string name="extra_key_score">biz.binarysolutions.stress.SCORE</string>
 </resources>
