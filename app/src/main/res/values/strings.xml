@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Perceived Stress Scale</string>
+
+    <string name="description">The Perceived Stress Scale (PSS) is the most widely used psychological instrument for measuring the perception of stress. It is a measure of the degree to which situations in one’s life are appraised as stressful. Items were designed to tap how unpredictable, uncontrollable, and overloaded respondents find their lives. The scale also includes a number of direct queries about current levels of experienced stress. The PSS was designed for use in community samples with at least a junior high school education. The items are easy to understand, and the response alternatives are simple to grasp. Moreover, the questions are of a general nature and hence are relatively free of content specific to any subpopulation group. The questions in the PSS ask about feelings and thoughts during the last month.\n\nEvidence for Validity: Higher PSS scores were associated with (for example):\n- failure to quit smoking\n- failure among diabetics to control blood sugar levels\n- greater vulnerability to stressful life-event-elicited depressive symptoms\n- more colds\n\nBecause levels of appraised stress should be influenced by daily hassles, major events, and changes in coping resources, predictive validity of the PSS is expected to fall off rapidly after four to eight weeks.</string>
+    <string name="button_start_pretest">Measure your stress level</string>
+
+    <string name="pretest_title">Instructions for Perceived Stress Scale</string>
+    <string name="pretest_description">The questions in this scale ask you about your feelings and thoughts during the last month. In each case, you will be asked to indicate how often you felt or thought a certain way. Although some of the questions are similar, there are differences between them and you should treat each one as a separate question. The best approach is to answer fairly quickly. That is, do not try to count up the number of times you felt a particular way; rather indicate the alternative that seems like a reasonable estimate.</string>
+    <string name="button_start_test">Start</string>
+
+    <string name="question01">In the last month, how often have you been upset because of something that happened unexpectedly?</string>
+    <string name="question02">In the last month, how often have you felt that you were unable to control the important things in your life?</string>
+    <string name="question03">In the last month, how often have you felt nervous and “stressed”?</string>
+    <string name="question04">In the last month, how often have you felt confident about your ability to handle your personal problems?</string>
+    <string name="question05">In the last month, how often have you felt that things were going your way?</string>
+    <string name="question06">In the last month, how often have you found that you could not cope with all the things that you had to do?</string>
+    <string name="question07">In the last month, how often have you been able to control irritations in your life?</string>
+    <string name="question08">In the last month, how often have you felt that you were on top of things?</string>
+    <string name="question09">In the last month, how often have you been angered because of things that were outside of your control?</string>
+    <string name="question10">In the last month, how often have you felt difficulties were piling up so high that you could not overcome them?</string>
+
+    <string name="radio1">Never</string>
+    <string name="radio2">Almost never</string>
+    <string name="radio3">Sometimes</string>
+    <string name="radio4">Fairly often</string>
+    <string name="radio5">Very often</string>
+
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+
+    <string name="score_text">Your score is:</string>
+
+    <string name="about_score">About the score</string>
+    <string name="score_interpretation">Score less than 21\n\nYou are a person who knows how to manage stress, who knows how to adapt and for whom there are always solutions.\n\n\nScore between 21 and 26\n\nYou are generally good when it comes to dealing with stress, but there are a number of situations that you cannot handle. Sometimes you have a feeling of helplessness which leads to emotional disturbances. You can break out of this sense of helplessness by learning strategies for change.\n\n\nScore greater than 27\n\nLife is a perpetual threat to you. This strong feeling of helplessness linked to your representation of life can make you fall into illness. Work on your thought pattern is desirable as well as a change in the way you react.</string>
+    <string name="retake_test">Retake the test</string>
+
+    <string name="reduce_stress">Reduce stress. Ease anxiety and depression.\nInstall our app with free meditation audio guides.</string>
+    <string name="find_out_more">Find out more</string>
+
+</resources>

@@ -1,0 +1,52 @@
+apply plugin: "com.android.application"
+
+android {
+    namespace "biz.binarysolutions.stress"
+    compileSdk 34
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    defaultConfig {
+        applicationId "biz.binarysolutions.stress"
+        minSdkVersion 21
+        targetSdk 34
+        versionCode 5
+        versionName "1.1.2"
+
+        setProperty("archivesBaseName", "$applicationId-$versionName")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions = ["ads"]
+    productFlavors {
+        withAds {
+            dimension "ads"
+        }
+        withoutAds {
+            dimension "ads"
+
+            dependenciesInfo {
+                includeInApk = false
+                includeInBundle = false
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    withAdsImplementation "com.google.android.gms:play-services-ads:23.6.0"
+
+    lintChecks "com.android.security.lint:lint:1.0.3"
+}

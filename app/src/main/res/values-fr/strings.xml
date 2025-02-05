@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Echelle de mesure du stress perçu</string>
+
+    <string name="description">Cette échelle adaptée de Cohen et Williamson est l’une des plus utilisée pour évaluer la perception du stress. Ses 10 items permettent de mesurer simplement et rapidement l’importance avec laquelle des situations de la vie sont perçues comme menaçantes, c’est à dire non prévisibles, incontrôlables et pénibles. En constituant des repères, elle permet d’amorcer une discussion sur le travail lors des visites médicales de santé au travail, par exemple. En effet, il est nécessaire de disposer de repères pour discuter et échanger.</string>
+    <string name="button_start_pretest">Mesurez votre niveau de stress</string>
+
+    <string name="pretest_title">Instructions pour l\'échelle de stress perçu</string>
+    <string name="pretest_description">Il faut répondre le plus spontanément possible, cocher une seule réponse par question en indiquant la réponse qui paraît la plus proche de la réalité dans le choix proposé. Certaines questions sont proches mais il existe des différences entre elles.</string>
+    <string name="button_start_test">Début</string>
+
+    <string name="question01">Au cours du dernier mois combien de fois, avez-vous été dérangé(e) par un évènement inattendu?</string>
+    <string name="question02">Au cours du dernier mois combien de fois vous a t-il semblé difficile de contrôler les choses importantes de votre vie?</string>
+    <string name="question03">Au cours du dernier mois combien de fois vous êtes-vous senti(e) nerveux(se) ou stressé(e)?</string>
+    <string name="question04">Au cours du dernier mois combien de fois vous êtes-vous senti(e) confiant(e) à prendre en main vos problèmes personnels?</string>
+    <string name="question05">Au cours du dernier mois combien de fois avez-vous senti que les choses allaient comme vous le vouliez?</string>
+    <string name="question06">Au cours du dernier mois combien de fois avez-vous pensé que vous ne pouviez pas assumer toutes les choses que vous deviez faire?</string>
+    <string name="question07">Au cours du dernier mois combien de fois avez-vous été capable de maîtriser votre énervement?</string>
+    <string name="question08">Au cours du dernier mois combien de fois avez-vous senti que vous dominiez la situation?</string>
+    <string name="question09">Au cours du dernier mois combien de fois vous êtes-vous senti(e) irrité(e) parce que évènements échappaient à vôtre contrôle?</string>
+    <string name="question10">Au cours du dernier mois combien de fois avez-vous trouvé que les difficultés s’accumulaient à un tel point que vous ne pouviez les contrôler?</string>
+
+    <string name="radio1">Jamais</string>
+    <string name="radio2">Presque jamais</string>
+    <string name="radio3">Parfois</string>
+    <string name="radio4">Assez souvent</string>
+    <string name="radio5">Souvent</string>
+
+    <string name="back">Arrière</string>
+    <string name="next">Suivant</string>
+    <string name="finish">Terminer</string>
+
+    <string name="score_text">Votre score est:</string>
+
+    <string name="about_score">Interprétation du score</string>
+    <string name="score_interpretation">Score inférieur à 21\n\nC’est une personne qui sait gérer son stress, qui sait s’adapter et pour laquelle il existe toujours des solutions.\n\n\nScore compris entre 21 et 26\n\nC’est une personne qui sait en général faire face au stress, mais il existe un certain nombres de situations qu’elle ne sait pas gérer. Elle est parfois animée d’un sentiment d’impuissance qui entraînent des perturbations émotionnelles. Elle peut sortir de ce sentiment d’impuissance en apprenant des méthodes de stratégies de changement.\n\n\nScore supérieur à 27\n\nLa vie est une menace perpétuelle pour cette personne: elle a le sentiment de subir la plupart des situations et de ne pouvoir rien faire d’autre que de les subir. Ce fort sentiment d’impuissance lié à sa représentation de la vie peut la faire basculer dans la maladie. Un travail sur son schéma de pensée est souhaitable ainsi qu’un changement dans sa manière de réagir.</string>
+    <string name="retake_test">Reprendre le test</string>
+
+    <string name="reduce_stress">Réduisez le stress. Soulagez l\'anxiété et la dépression.\nInstallez gratuitement notre application avec guides audio de méditation.</string>
+    <string name="find_out_more">En savoir plus</string>
+
+</resources>
