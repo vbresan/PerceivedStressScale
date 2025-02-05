@@ -45,8 +45,11 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
-    implementation 'androidx.appcompat:appcompat:1.7.0'
-    withAdsImplementation "com.google.android.gms:play-services-ads:23.6.0"
+    // version 1.7.0 causes Duplicate class exception in withoutAds flavor
+    implementation "androidx.appcompat:appcompat:1.6.1"
+
+    // version 23.6.0 causes another exception during the build
+    withAdsImplementation "com.google.android.gms:play-services-ads:23.2.0"
 
     lintChecks "com.android.security.lint:lint:1.0.3"
 }
