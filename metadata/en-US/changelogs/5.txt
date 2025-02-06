@@ -1,3 +1,3 @@
 1.1.2 (2025.02.06)
 
-* open-source version
+* no-ads, open source version
