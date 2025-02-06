@@ -1,0 +1,9 @@
+The Perceived Stress Scale (PSS) is the most widely used psychological instrument for measuring the perception of stress. It is a measure of the degree to which situations in one's life are appraised as stressful. Items were designed to tap how unpredictable, uncontrollable, and overloaded respondents find their lives. The scale also includes a number of direct queries about current levels of experienced stress. The PSS was designed for use in community samples with at least a junior high school education. The items are easy to understand, and the response alternatives are simple to grasp. Moreover, the questions are of a general nature and hence are relatively free of content specific to any subpopulation group. The questions in the PSS ask about feelings and thoughts during the last month.
+
+Evidence for Validity: Higher PSS scores were associated with (for example):
+- failure to quit smoking
+- failure among diabetics to control blood sugar levels
+- greater vulnerability to stressful life-event-elicited depressive symptoms
+- more colds
+
+Because levels of appraised stress should be influenced by daily hassles, major events, and changes in coping resources, predictive validity of the PSS is expected to fall off rapidly after four to eight weeks.
