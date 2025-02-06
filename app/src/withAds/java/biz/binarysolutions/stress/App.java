@@ -1,9 +1,9 @@
 package biz.binarysolutions.stress;
 
+import android.app.Activity;
 import android.app.Application;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
@@ -58,7 +58,7 @@ public class App extends Application {
      *
      * @param activity
      */
-    public void showAd(AppCompatActivity activity) {
+    public void showAd(Activity activity) {
 
         if (interstitialAd != null) {
             interstitialAd.show(activity);

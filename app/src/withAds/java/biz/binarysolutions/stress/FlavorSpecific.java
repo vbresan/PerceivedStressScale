@@ -1,19 +1,25 @@
 package biz.binarysolutions.stress;
 
 import android.app.Activity;
-import android.app.Application;
 
 /**
  *
  */
-public class App extends Application {
+public class FlavorSpecific {
 
     /**
      *
      * @param activity
      */
     @SuppressWarnings("unused")
-    public void showAd(Activity activity) {
+    public FlavorSpecific(Activity activity) {
+        // do nothing
+    }
+
+    /**
+     *
+     */
+    public void setButtonListeners() {
         // do nothing
     }
 }

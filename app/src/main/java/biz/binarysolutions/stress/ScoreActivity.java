@@ -96,6 +96,8 @@ public class ScoreActivity extends AppCompatActivity {
         String key = getString(R.string.extra_key_score);
         score = preferences.getInt(key, -1);
 
+        new FlavorSpecific(this).setButtonListeners();
+
         displayScore();
         displayProgress();
         displayMeditationAppLink();
