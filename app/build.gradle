@@ -22,7 +22,7 @@ android {
     buildTypes {
         release {
             minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }
     }
 
@@ -44,12 +44,18 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "androidx.appcompat:appcompat:1.7.1"
 
-    // version 1.7.0 causes Duplicate class exception in withoutAds flavor
-    implementation "androidx.appcompat:appcompat:1.6.1"
-
-    // version 23.6.0 causes another exception during the build
-    withAdsImplementation "com.google.android.gms:play-services-ads:23.2.0"
+    // version 24.0.0+ requires min SDK 23
+    withAdsImplementation "com.google.android.gms:play-services-ads:23.6.0"
 
     lintChecks "com.android.security.lint:lint:1.0.3"
+}
+
+/*
+    Needed because including appcompat dependency causes duplicate class
+    exceptions in withoutAds flavor.
+*/
+configurations.implementation {
+    exclude group: "org.jetbrains.kotlin", module: "kotlin-stdlib-jdk8"
 }
