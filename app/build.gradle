@@ -2,7 +2,7 @@ apply plugin: "com.android.application"
 
 android {
     namespace "biz.binarysolutions.stress"
-    compileSdk 34
+    compileSdk 35
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
@@ -12,9 +12,9 @@ android {
     defaultConfig {
         applicationId "biz.binarysolutions.stress"
         minSdkVersion 21
-        targetSdk 34
-        versionCode 5
-        versionName "1.1.2"
+        targetSdk 35
+        versionCode 6
+        versionName "1.1.3"
 
         setProperty("archivesBaseName", "$applicationId-$versionName")
     }
